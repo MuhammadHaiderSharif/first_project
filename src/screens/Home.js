@@ -1,12 +1,12 @@
 // src/screens/Home.js
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-// import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 
 const HomeScreen = () => {
 
-    // const navigation = useNavigation();
+    const navigation = useNavigation();
 
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -14,7 +14,7 @@ const HomeScreen = () => {
       <Button
         title="Go to Details"
         onPress={() =>{
-            // navigation.navigate
+            navigation.navigate('Details')
         } }
       />
     </View>

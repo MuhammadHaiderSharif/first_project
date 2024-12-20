@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from '../screens/Login';
-import HomeScreen from '../screens/Home';
-import DetailsScreen from '../screens/Details';
-import ProfileScreen from '../screens/Profile';
-import SettingsScreen from '../screens/Settings';
+import LoginScreen from './src/screens/Login';
+import HomeScreen from './src/screens/Home';
+import DetailsScreen from './src/screens/Details';
+import ProfileScreen from './src/screens/Profile';
+import SettingsScreen from './src/screens/Settings';
 
 const Stack = createStackNavigator();
+
 
 export default function App() {
   return (
@@ -22,5 +23,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
 
 

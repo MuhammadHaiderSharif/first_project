@@ -1,13 +1,13 @@
 // src/screens/Login.js
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button } from 'react-native';
-// import { useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 
 const LoginScreen = () => {
   const [username, setUsername] = useState('');
 
-//   const navigation = useNavigation();
+  const navigation = useNavigation();
   
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -27,7 +27,7 @@ const LoginScreen = () => {
         title="Login"
         onPress={() => {
           if (username) {
-            // navigation.navigate 
+            navigation.navigate('Home') 
           } else {
             alert('Please enter a username');
           }

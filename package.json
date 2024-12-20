@@ -1,6 +1,6 @@
 {
   "name": "first_project",
-  "main": "expo-router/entry",
+  "main": "Index.js",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
